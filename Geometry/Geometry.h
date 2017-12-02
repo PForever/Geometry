@@ -2,12 +2,19 @@
 
 #pragma once
 
-using namespace System;
+#ifdef MATHFUNCSDLL_EXPORTS
+#define MATHFUNCSDLL_API __declspec(dllexport) 
+#else
+#define MATHFUNCSDLL_API __declspec(dllimport) 
+#endif
 
-namespace Geometry {
+//#include "IFigure.h"
+//#include "MySqr.h"
+//#include "Point.h"
+//#include "Rolf.h"
+//#include "Timer.h"
 
-	public ref class Class1
-	{
-		// TODO: здесь следует добавить свои методы для этого класса.
-	};
+namespace Geometry 
+{
+
 }
