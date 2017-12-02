@@ -3,6 +3,7 @@
 
 namespace Geometry
 {
+	/* Представление точки. */
 	MATHFUNCSDLL_API class Point
 	{
 	public:

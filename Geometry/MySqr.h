@@ -2,6 +2,7 @@
 #include "IFigure.h"
 namespace Geometry
 {
+	/* Реализация интефейса. Квадрат. */
 	struct MySqr : IFigure
 	{
 		Point * _center;

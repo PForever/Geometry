@@ -8,11 +8,6 @@
 #define MATHFUNCSDLL_API __declspec(dllimport) 
 #endif
 
-//#include "IFigure.h"
-//#include "MySqr.h"
-//#include "Point.h"
-//#include "Rolf.h"
-//#include "Timer.h"
 
 namespace Geometry 
 {

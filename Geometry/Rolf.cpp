@@ -3,7 +3,7 @@
 #include "Point.h"
 #include "IFigure.h"
 using namespace Geometry;
-
+/* Поворачивает все точки фигуры */
 void Rolf::TurnAll(IFigure& fgr, const double coal)
 {
 	std::vector<Point>& points = fgr.GetPoints();
@@ -16,7 +16,8 @@ void Rolf::TurnAll(IFigure& fgr, const double coal)
 		++iter;
 	}
 }
-
+/* Создаёт повёрнутую копию фигуры */
+//TODO не уверен, что работает правильно
 void Rolf::TurnCopy(IFigure& fgr, double const coal, Point * newpoints)
 {
 	std::vector<Point>& points = fgr.GetPoints();
@@ -29,7 +30,7 @@ void Rolf::TurnCopy(IFigure& fgr, double const coal, Point * newpoints)
 		newpoints[i++] = TurnOne(const_cast<Point&>(*iter++).GetCopy(), center, coal);
 	}
 }
-
+/* Поворачивает точку а вокруг точки c на угол coal */
 Point& Rolf::TurnOne(Point& a, Point& c, double const coal)
 {
 	//const double line = GetLength(a, c);
@@ -42,7 +43,7 @@ Point& Rolf::TurnOne(Point& a, Point& c, double const coal)
 	return *res;
 }
 
-
+/* Вычисляет растояние между точками a и b */
 double Rolf::GetLength(Point& a, Point& b)
 {
 	return sqrt(pow(a.PointX - b.PointX, 2) + pow(a.PointY - b.PointY, 2));

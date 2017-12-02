@@ -5,6 +5,7 @@ namespace Geometry
 {
 	class Point;
 	__interface IFigure;
+	/* Класс поворота фигуры */
 	class Rolf
 	{
 	public:
