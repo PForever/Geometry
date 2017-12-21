@@ -13,47 +13,107 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы исходного кода\Geometry3D">
+      <UniqueIdentifier>{a7dd4671-f205-431a-900a-8d793c34dbe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\Geometry 3D">
+      <UniqueIdentifier>{ee8db2b2-7812-41c3-8c84-7331b3a0f3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\Geometry 3D\Geometry">
+      <UniqueIdentifier>{d51df36d-4cbe-4df2-bab0-b403a00fa945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\Geometry3D\Geometry">
+      <UniqueIdentifier>{eac0eef7-f363-4d8a-96c1-b0760834e5c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Geometry.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
     <ClInclude Include="Stdafx.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Заголовочные файлы\Geometry 3D\Geometry</Filter>
+    </ClInclude>
     <ClInclude Include="IFigure.h">
-      <Filter>Заголовочные файлы</Filter>
+      <Filter>Заголовочные файлы\Geometry 3D\Geometry</Filter>
     </ClInclude>
     <ClInclude Include="MySqr.h">
-      <Filter>Заголовочные файлы</Filter>
+      <Filter>Заголовочные файлы\Geometry 3D\Geometry</Filter>
     </ClInclude>
     <ClInclude Include="Point.h">
-      <Filter>Заголовочные файлы</Filter>
+      <Filter>Заголовочные файлы\Geometry 3D\Geometry</Filter>
     </ClInclude>
     <ClInclude Include="Rolf.h">
-      <Filter>Заголовочные файлы</Filter>
+      <Filter>Заголовочные файлы\Geometry 3D\Geometry</Filter>
     </ClInclude>
     <ClInclude Include="Timer.h">
+      <Filter>Заголовочные файлы\Geometry 3D\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Figure2DBase.h">
       <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Iteratir.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="IPoint3D.h">
+      <Filter>Заголовочные файлы\Geometry 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Point3D.h">
+      <Filter>Заголовочные файлы\Geometry 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="IPoint.h">
+      <Filter>Заголовочные файлы\Geometry 3D\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="IFigure3D.h">
+      <Filter>Заголовочные файлы\Geometry 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="IPlane.h">
+      <Filter>Заголовочные файлы\Geometry 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCoub.h">
+      <Filter>Заголовочные файлы\Geometry 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Rolf3D.h">
+      <Filter>Заголовочные файлы\Geometry 3D</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Stdafx.cpp">
-      <Filter>Файлы исходного кода</Filter>
-    </ClCompile>
     <ClCompile Include="MySqr.cpp">
-      <Filter>Файлы исходного кода</Filter>
+      <Filter>Файлы исходного кода\Geometry3D\Geometry</Filter>
     </ClCompile>
     <ClCompile Include="Point.cpp">
-      <Filter>Файлы исходного кода</Filter>
+      <Filter>Файлы исходного кода\Geometry3D\Geometry</Filter>
     </ClCompile>
     <ClCompile Include="Rolf.cpp">
-      <Filter>Файлы исходного кода</Filter>
+      <Filter>Файлы исходного кода\Geometry3D\Geometry</Filter>
     </ClCompile>
     <ClCompile Include="Timer.cpp">
+      <Filter>Файлы исходного кода\Geometry3D\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Figure2DBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Iteratir.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Point3D.cpp">
+      <Filter>Файлы исходного кода\Geometry3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Rolf3D.cpp">
+      <Filter>Файлы исходного кода\Geometry3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Файлы исходного кода\Geometry3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCoub.cpp">
+      <Filter>Файлы исходного кода\Geometry3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
   </ItemGroup>

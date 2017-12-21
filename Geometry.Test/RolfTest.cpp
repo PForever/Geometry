@@ -2,9 +2,10 @@
 #include "CppUnitTest.h"
 #include "Rolf.h"
 #include "Point.h"
+#include "IPoint.h"
 #include <complex>
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-using namespace Geometry;
+using namespace Geometry3D::Geometry;
 using namespace std;
 namespace GeometryTest
 {		
@@ -31,10 +32,17 @@ namespace GeometryTest
 		TEST_METHOD(TestTurnOneTurning)
 		{
 			Point a(10, 0), c(5, 5);
-			auto b = Rolf::TurnOne(a, c, M_PI / 4);
+			IPoint & b = Rolf::TurnOne(a, c, M_PI / 4);
 			auto p = sqrt(5 * 5 + 5 * 5) + 5.;
-			Assert::IsTrue(ENQ(b.PointX, p));
-			Assert::IsTrue(ENQ(b.PointY, 5.));
+			Assert::IsTrue(ENQ(b.GetX(), p));
+			Assert::IsTrue(ENQ(b.GetY(), 5.));
+		}
+
+
+		TEST_METHOD(TestTemp)
+		{
+			auto b = 5 * 2;
+			auto p = sqrt(5 * 5 + 5 * 5) + 5.;
 		}
 	};
 }

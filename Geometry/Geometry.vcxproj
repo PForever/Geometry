@@ -138,19 +138,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Figure2DBase.h" />
     <ClInclude Include="Geometry.h" />
     <ClInclude Include="IFigure.h" />
+    <ClInclude Include="IFigure3D.h" />
+    <ClInclude Include="IPlane.h" />
+    <ClInclude Include="IPoint.h" />
+    <ClInclude Include="Iteratir.h" />
+    <ClInclude Include="MyCoub.h" />
     <ClInclude Include="MySqr.h" />
+    <ClInclude Include="Plane.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="IPoint3D.h" />
+    <ClInclude Include="Point3D.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Rolf.h" />
+    <ClInclude Include="Rolf3D.h" />
     <ClInclude Include="Stdafx.h" />
     <ClInclude Include="Timer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Figure2DBase.cpp" />
+    <ClCompile Include="Iteratir.cpp" />
+    <ClCompile Include="MyCoub.cpp" />
     <ClCompile Include="MySqr.cpp" />
+    <ClCompile Include="Plane.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Point3D.cpp" />
     <ClCompile Include="Rolf.cpp" />
+    <ClCompile Include="Rolf3D.cpp" />
     <ClCompile Include="Stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -8,10 +8,12 @@
 #define MATHFUNCSDLL_API __declspec(dllimport) 
 #endif
 
-
-namespace Geometry 
+namespace Geometry3D
 {
-	const double eps = 0.00000001;
-	#define M_PI 3.141592653589793238462643383279502884L
-	#define ENQ(a, b) (abs(a - b) < eps)
+	namespace Geometry
+	{
+		const double eps = 0.00000001;
+#define M_PI 3.141592653589793238462643383279502884L
+#define ENQ(a, b) (abs(a - b) < eps)
+	}
 }

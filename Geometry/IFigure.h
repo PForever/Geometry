@@ -2,17 +2,22 @@
 #include "stdafx.h"
 #include "Geometry.h"
 
-namespace Geometry
+namespace Geometry3D
 {
-	/* Интерфейс фигур. */
-	class Point;
-	__interface  IFigure
+	namespace Geometry
 	{
-		/* Точка вращения. */
-		MATHFUNCSDLL_API Point& GetCenter();
-		/* Число точек у фигуры */
-		MATHFUNCSDLL_API size_t GetCount();
-		/* вектор точек */
-		MATHFUNCSDLL_API std::vector<Point>& GetPoints();
-	};
+		/* Интерфейс фигур. */
+		__interface IPoint;
+		__interface  IFigure
+		{
+			/* Точка вращения. */
+			MATHFUNCSDLL_API IPoint& GetCenter();
+			/* Число точек у фигуры */
+			MATHFUNCSDLL_API size_t GetCount();
+			/* вектор точек */
+			MATHFUNCSDLL_API std::vector<IPoint*>& GetPoints();
+
+		};
+	}
 }
+

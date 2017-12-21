@@ -1,19 +1,22 @@
 #pragma once
 #include "Geometry.h"
 
-namespace Geometry
+namespace Geometry3D
 {
-	class Point;
-	__interface IFigure;
-	/* Класс поворота фигуры */
-	class Rolf
+	namespace Geometry
 	{
-	public:
-		MATHFUNCSDLL_API static void TurnAll(IFigure& fgr, double const coal);
-		MATHFUNCSDLL_API static void TurnCopy(IFigure& fgr, double const coal, Point * newpoints);
+		__interface IPoint;
+		__interface IFigure;
+		/* Класс поворота фигуры */
+		class Rolf
+		{
+		public:
+			MATHFUNCSDLL_API static void TurnAll(IFigure& fgr, double const coal);
+			//MATHFUNCSDLL_API static void TurnCopy(IFigure& fgr, double const coal, IPoint * newpoints);
+			MATHFUNCSDLL_API static IPoint& TurnOne(IPoint& a, IPoint& c, double const coal);
+			//MATHFUNCSDLL_API static double GetLength(IPoint& a, IPoint& b);
+		};
 
-		MATHFUNCSDLL_API static Point& TurnOne(Point& a, Point& c, double const coal);
-		MATHFUNCSDLL_API static double GetLength(Point& a, Point& b);
-	};
-
+	}
 }
+

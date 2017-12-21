@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "Timer.h"
 #include <thread>
-using namespace Geometry;
+using namespace Geometry3D::Geometry;
 
 using namespace std;
 using namespace chrono;
